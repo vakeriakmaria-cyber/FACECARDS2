@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Phrases</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            box-shadow: 0 4px 8px a76a9c;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card.is-flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .card-front {
+            background-color: #a76a9c;
+            color: white;
+        }
+        .card-back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT REFERS TO A SKIN CONDITION</div>
+            <div class="card-back">это относится к состоянию кожи</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">A SUFFICIENT AMOUNT OF WATER</div>
+            <div class="card-back">достаточное количество воды</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">PEELING, FLAKINESS, AND DISCOMFORT</div>
+            <div class="card-back">шелушение, чешуйчатость и дискомфорт</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">THE KEY DIFFERENCES</div>
+            <div class="card-back">ключевые различия</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT CAN BE FIXED BY</div>
+            <div class="card-back">это можно исправить с помощью</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT CAN BE MANAGED BY</div>
+            <div class="card-back">с этим можно справиться с помощью</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">TOPICAL TREATMENT</div>
+            <div class="card-back">местное (наружное) лечение</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT CAN LEAD TO...</div>
+            <div class="card-back">это может привести к...</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">PROLONGED SUN EXPOSURE</div>
+            <div class="card-back">длительное пребывание на солнце</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">HARSH SKIN CARE PRODUCTS</div>
+            <div class="card-back">агрессивные средства по уходу за кожей</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">SIDE EFFECTS</div>
+            <div class="card-back">побочные эффекты</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT CAN CAUSE SKIN DRYNESS</div>
+            <div class="card-back">это может вызвать сухость кожи</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">IT CAN COMPROMISE THE SKIN'S PROTECTIVE LIPID BARRIER</div>
+            <div class="card-back">это может повредить защитный липидный барьер кожи</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">DRY SKIN CAN BE FLAKY, ITCHY, AND EXTREMELY UNCOMFORTABLE</div>
+            <div class="card-back">сухая кожа может быть чешуйчатой, зудящей и крайне дискомфортной
+
+</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">YOU MAY EXPERIENCE THE FOLLOWING SYMPTOMS..</div>
+            <div class="card-back"> у вас могут проявиться следующие симптомы</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">DULLNESS</div>
+            <div class="card-back">тусклость</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">DARK CIRCLES</div>
+            <div class="card-back">тёмные круги под глазами</div>
+        </div>
+    </div>
+    
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">PRONOUNCED FINE LINES, EXPRESSION LINES, WRINKLES</div>
+            <div class="card-back">выраженные тонкие линии, мимические морщины и морщины</div>
+        </div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">SCALY AND ROUGHT TEXTURE</div>
+            <div class="card-back">чешуйчатая и грубая текстура</div>
+        </div>
+    </div>
+  
+      <div class="card" onclick="this.classList.toggle('is-flipped');">
+        <div class="card-inner">
+            <div class="card-front">SUNKEN EYES</div>
+            <div class="card-back">запавшие глаза</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
